@@ -3,14 +3,14 @@ from lxml import etree
 import random
 import csv
 import time
-from ua_info import ua_list
+from url_info import url_list
 
 
 class MaoyanSpider(object):
     def __init__(self):
         self.url = 'https://www.1bqg.net/1bqg/851459570/'  # 目录网址
         self.url2 = 'https://www.1bqg.net'  # 章节网址前半
-        self.headers = {'User-Agent': random.choice(ua_list)}
+        self.headers = {'User-Agent': random.choice(url_list)}
         # 创建章节计数器
         self.number = 0
 
